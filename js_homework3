@@ -1,0 +1,39 @@
+console.log(pow(5, 0))
+console.log(sum())
+console.log(triangle(3))
+
+function pow(x, y) {
+    let result = 1;
+    if (y > 0) {
+        for (let i = 0; i < y; i++) {
+            result *= x;
+        }
+    }
+    else if (y === 0) {
+        return 1;
+    }
+    else {
+        for (let i = 0; i < -y; i++) {
+            result *= x;
+        }
+        result = 1 / result;
+    }
+    return result;
+}
+
+function sum() {
+    let result = 0;
+    for (let i = 0; i <= 1000; i++) {
+        result += i;
+    }
+    return result
+}
+
+function triangle(n) {
+    let result = ""
+    for (let i = 0; i < n; i++) {
+        result += "*";
+        console.log(result);
+    }
+    return "*"
+}
