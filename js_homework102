@@ -1,0 +1,6 @@
+const test = ` `; // Fill in the text
+
+const notA = /\b[^aA\s]{6,}\b/g;
+const result = test.match(notA);
+
+console.log(result);
